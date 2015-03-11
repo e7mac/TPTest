@@ -46,7 +46,7 @@ end
 def MergeRepoBranchToBaseForAppStore(repo, head, base)
   title = 'App Store PR made at ' + Time.now.strftime("%a %B %d, %Y at %I:%M %p %Z")
   MergeRepoBranchToBase(repo, head, base, title)
-  tag = 'v0.0.3'
+  tag = 'v0.1'
   AddTagToLatestCommit(repo, 'master', tag, title)
 end
 
